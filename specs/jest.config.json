@@ -1,0 +1,17 @@
+{
+  "verbose": true,
+  "collectCoverage": true,
+  "coverageDirectory": "coverage/unit-testing",
+  "coverageReporters": ["json", "lcov", "text", "text-summary"],
+  "collectCoverageFrom": ["src/**/**", "!**/index.js", "!**/app.mount.jsx"],
+  "coveragePathIgnorePatterns":["/dist/", "/dist-release/"],
+  "coverageThreshold": {
+    "global": {
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  },
+  "moduleFileExtensions": ["js", "jsx"],
+  "rootDir": "../"
+}
